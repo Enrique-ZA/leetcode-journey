@@ -1,5 +1,5 @@
-// Runtime beats 83.63%
-// Memory beats 66.37%
+// Runtime beats 83.63% of solutions
+// Memory beats 66.37% of solutions
 
 /**
  * Checks if a vector of integers contains any duplicate elements.
@@ -20,6 +20,36 @@ bool containsDuplicate(vector<int>& nums) {
         } else {
             // If the element is not found, insert it into the hashSet
             hashSet.insert(nums[i]);
+        }
+    }
+
+    // If no duplicates were found, return false
+    return false;
+}
+
+// Generic version
+
+/**
+ * Checks if a container of elements contains any duplicate values.
+ *
+ * @tparam Container The type of the container.
+ * @param container The container to be checked for duplicates.
+ * @return True if the container contains duplicates, false otherwise.
+ */
+template<typename Container>
+bool containsDuplicate(const Container& container) {
+    // Create an unordered_set to store unique elements
+    unordered_set<typename Container::value_type> hashSet;
+
+    // Iterate through each element in the container
+    for(const auto& element : container){
+        // Check if the current element is already in the hashSet
+        if(hashSet.find(element) != hashSet.end()){
+            // If the element is found, it is a duplicate
+            return true;
+        } else {
+            // If the element is not found, insert it into the hashSet
+            hashSet.insert(element);
         }
     }
 

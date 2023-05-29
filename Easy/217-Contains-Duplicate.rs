@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/contains-duplicate/submissions/959635161/
 
-Runtime 16ms - Beats 81.29%
-Memory 3.8 - Beats 62.65%
+// Runtime 16ms - Beats 81.29%
+// Memory 3.8 - Beats 62.65%
 
 impl Solution {
     pub fn contains_duplicate(nums: Vec<i32>) -> bool {

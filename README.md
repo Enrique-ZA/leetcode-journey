@@ -1,6 +1,6 @@
 # LeetCode Journey - Enrique-ZA
 
-Welcome to my repo where I post my solutions to LeetCode challenges I have done..
+Welcome to my repo where I post my solutions to LeetCode challenges I have done.
 
 ## About This Repository
 
